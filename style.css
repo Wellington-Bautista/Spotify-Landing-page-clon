@@ -1,0 +1,618 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+:root{
+    --colorVerde:#23C300;
+    --colorGradiente:linear-gradient(26deg, #f700e0 13%, #C850C0 60%, #c850c0 89%);
+    --colorRosado:#f700e0;
+    --fuenteBanners:'Bree Serif', serif;
+    --colorGris:#808080;
+}
+
+/* Inicio de ajustes para el header  */
+
+.logo{
+    width:150px;
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+    margin:15px 50px;
+}
+
+.cabecera{
+    width:100vw;
+    height: 90px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+}
+.menu__ul{
+    margin-right:15px;
+}
+.menu__ul-li{
+    display:inline-block;
+    list-style: none;
+    padding: 15px 30px;
+}
+.menu__ul-li a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 18px;
+}
+
+.menu__ul-li a:hover{
+    color:var(--colorVerde);
+}
+
+.botonResponsive{
+    background-color: inherit;
+    cursor:pointer;
+    border:none;
+    margin-right:15px;
+    display:none;
+}
+
+.botonResponsive i{
+    color:#fff;
+    font-size: 25px;
+}
+/* Fin de los ajustes del header */
+
+/* Inicio de configuraciones del banner1 */
+.banner1{
+    /* height: 600px; */ 
+    width: 100vw;
+    background-color: var(--colorRosado);
+    background-image: var(--colorGradiente);
+    background-image: url(https://www.scdn.co/i/free/bubbles-dktp.svg);
+    background-size:cover;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cellPhone img{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width:300px;
+}
+.cellPhone__imagen{
+    width:200px;
+    height: 300px;
+}
+
+.banner1-texto{
+    width: 700px;
+}
+.banner1__item{
+    margin: 50px 90px;
+}
+.banner1__item h2{
+    font-family:var(--fuenteBanners) ;
+    font-size: 70px;
+    color:rgba(7, 7, 7, 0.863);
+}
+
+.banners-boton{
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    -ms-border-radius: 500px;
+    -o-border-radius: 500px;
+    background-color: #fff;
+    border: none;
+    width: 250px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 19px;
+    color: #000;
+    transition: background-color 1s;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    -o-transition: background-color 1s;
+}
+
+.banners-boton:hover{
+    background-color: var(--colorVerde);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+/* Fin de configuracion de banner1   */
+
+/* Inicio de configuracion de banner2  */
+
+.banner2{
+    width: 100vw;
+    /* height: 400px; */
+    margin-top: 60px;
+}
+
+.banner2 ul{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 70px;
+    margin-right: 20px;
+    justify-content: space-evenly;
+}
+
+.banner2 ul li{
+    padding: 0 30px;
+}
+.banner2 h1{
+    text-align: center;
+}
+.banner2__item{
+    width: 250px;
+    list-style: none;
+}
+
+.banner2__item h4{
+    font-size: 20px;
+    text-align: center;
+    width:250px;
+}
+
+.banner2__item p{
+    text-align: center;
+    font-size: 17px;
+    width: 250px;
+}
+
+.banner2__item-iconos{
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    margin:0 50px;
+}
+
+.icono1{
+    background-image: url(https://i.scdn.co/image/ab671c3d0000f430678067184805befd38aa0f57);
+}
+
+.icono2{
+    background-image: url(https://i.scdn.co/image/ab671c3d0000f430a6f822749d5c25c32ee31d66);
+}
+.icono3{
+    background-image: url(https://i.scdn.co/image/ab671c3d0000f430eb43023b5332389f5094530d);
+}
+
+.icono4{
+    background-image: url(https://i.scdn.co/image/ab671c3d0000f4309430062bc28461dc8fbde6bc);
+}
+
+/* Fin configuracion de banner2  */
+/* Inicio de configuracion de banner3  */
+
+.banner3{
+    width:100vw;
+    /* height: 300px; */
+    background-image: var(--colorGradiente);
+    margin-top: 100px;
+}
+
+.banner3 h2{
+    text-align: center;
+    font-family: var(--fuenteBanners);
+    font-size: 50px;
+    padding:100px 0;
+}
+
+/* Fin de configuracion del banner 3  */
+/* Inicio seccion de preguntas  */
+.preguntas{
+    margin-top: 60px;
+}
+.preguntas__header{
+    text-align: center;
+    font-size: 30px;
+}
+.preguntas__ul-li{
+    list-style: none;
+    cursor:pointer;
+    /* border-bottom: 0.5px solid rgba(0, 0, 0, 0.514); */
+    width: 80vw;
+    margin-left: 50px;
+}
+
+.preguntas__ul-li-summary{
+    list-style: none;
+    font-family: arial;
+    font-size: 19px;
+    padding: 15px 0;
+}
+
+.preguntas__ul-li-summary:hover, .preguntas__ul-li-summary:focus{
+    background-color: rgba(240, 218, 218, 0.753);
+    text-decoration: underline;
+}
+
+.iconoOcultar{
+    float: right;
+    font-size: 20px;
+    margin: 0 15px;
+}
+
+.rotarIcono{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+.preguntas__ul-li b{
+    color:var(--colorVerde);
+}
+
+/*Fin de la seccion de preguntas*/
+/*Inicio del banner 4 */
+.banner4{
+    width: 100vw;
+    /* height: 500px; */
+    background-color: var(--colorRosado);
+    background-image: var(--colorGradiente);
+    background-image: url(https://www.scdn.co/i/free/bubbles-dktp.svg);
+    background-size: cover;
+    margin-top: 50px;
+}
+
+.banner4 h2{
+    font-family: var(--fuenteBanners);
+    font-size: 60px;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.banner4 button{
+    margin-left: 40%;
+    margin-bottom: 15px;
+}
+
+/*Fin del banner 4 */
+
+/*Inicio del footer */
+footer{
+    width: 100vw;
+    background-color: #000;
+}
+.footerDetalles{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer__ul-li{
+    list-style: none;
+    padding: 15px 0;
+}
+.footer__ul-li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.footer-encabezado{
+    font-size: 20px;
+    color: var(--colorGris);
+    align-self: center;
+}
+.footer__ul-li a:hover{
+    text-decoration: underline;
+    color:var(--colorVerde);
+}
+.footer-section{
+    padding: 100px 0;
+}
+.redesSociales__ul{
+    display:flex;
+    gap: 15px;
+}
+
+.redesSociales__ul li{
+    list-style: none;
+}
+.redesSociales-red{
+    width: 60px;
+    height: 60px;
+    background-color: rgba(128, 128, 128, 0.656);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.redesSociales-red:hover i{
+    color: var(--colorVerde);
+}
+.redesSociales-red i{
+    font-size:30px;
+    color: #fff;
+    text-align: center;
+    padding: 15px 18px;
+}
+.subFooter{
+    display: flex;
+    justify-content: space-between;
+}
+.subFooter a{
+    color:var(--colorGris);
+    text-decoration: none;
+    font-size: 17px;
+}
+.subFooter li{
+    list-style: none;
+    color:var(--colorGris);
+    font-size: 17px;
+}
+.subFooter__politica-ul{
+    display:flex;
+    gap:0 13px;
+}
+
+.subFooter__politica-ul-li a:hover{
+    color:var(--colorVerde);
+}
+
+.subFooter__region-ul-li i{
+    font-size: 12px;
+}
+.subFooter__region{
+    margin:0 50px;
+}
+.subFooter__region-ul-li a:hover{
+    color: var(--colorVerde);
+}
+.footer__copyRight{
+    text-align: center;
+    color:#fff;
+    border-top: 1px solid var(--colorGris);
+}
+.footer__copyRight a{
+    text-decoration: none;
+    color:#fff;
+}
+.footer__copyRight a:hover{
+    color:var(--colorVerde);
+}
+.footer__copyRight p{
+    padding: 10px 0;
+    margin-bottom: 0;
+}
+/* Fin de ajustes del footer  */
+/* Inicio de configuracion responsive para mobiles */
+@media screen and (min-width:300px) and (max-width:576px){
+    /* header responsive  */
+    .logo{
+        margin:15px 10px;
+    }
+    .menu{
+        position: fixed;
+        background-color: #000;
+        top:89px;
+        height: 100%;
+        max-height: 100vh;
+        width: 100vw;
+        overflow-y: hidden;
+        right: 100%;
+    }
+    .menuMostrar{
+        right: 0;
+    }
+    .menu__ul-li{
+        display:block;
+        text-align: center;
+    }
+    .menu__ul-li a{
+        font-size: 25px;
+    }
+    
+    .botonResponsive{
+        display:block;
+        margin-right: 20px;
+    }
+    /* Banner 1 responsive  */
+    .banner1-texto{
+        width: 500px;
+    }
+    .banner1__item{
+        margin: 40px 20px;
+    }
+    .banner1__item h2{
+        font-size: 50px;
+    }
+    /* banner 2 responsive  */
+    .banner2 ul{
+        justify-content: center;
+    }
+    
+    .banner2 ul li{
+        padding: 20px 0;
+    }
+    .banner2 h1{
+        font-size: 25px;
+    }
+    /* banner 3 responsive  */
+    .banner3{
+        margin-top: 10px;
+    }
+    
+    .banner3 h2{
+        font-size: 40px;
+        padding:100px 30px;
+    }
+    /* Seccion preguntas responsive  */
+    .preguntas__header{
+        font-size: 25px;
+    }
+    .preguntas__ul-li{
+        margin-left: 0;
+    }
+    /* banner 4 responsive  */
+
+    .banner4 h2{
+        font-size: 50px;
+        padding-top: 130px;
+    }
+    
+    .banner4 button{
+        margin-left: 20%;
+        margin-bottom: 25px;
+    }
+    /* footer responsive  */
+    .footerDetalles{
+        flex-direction: column;
+    }
+    .footer__ul-li{
+        padding: 15px 0;
+    }
+
+    .footer-section{
+        padding: 10px 0;
+    }
+    
+    .subFooter__politica-ul{
+        gap:10px 13px;
+        flex-direction: column;
+    }
+    
+    .subFooter__region{
+        margin:0 30px;
+    }
+}
+/* Fin de configuracion responsive para mobiles */
+/* Inicio de configuracion responsive para tablets */
+@media screen and (min-width:576px) and (max-width:992px){
+    /* header responsive tablet*/
+    .logo{
+        margin:18px 30px;
+    }
+    .menu{
+        position: fixed;
+        background-color: #000;
+        top:89px;
+        height: 100%;
+        max-height: 100vh;
+        width: 100vw;
+        overflow-y: hidden;
+        right: 100%;
+    }
+    .menuMostrar{
+        right: 0;
+    }
+    .menu__ul-li{
+        display:block;
+        text-align: center;
+    }
+    .menu__ul-li a{
+        font-size: 25px;
+    }
+    
+    .botonResponsive{
+        display:block;
+        margin-right: 40px;
+    }
+    /* Banner 1 responsive tablet */
+    .banner1{
+        flex-direction: column;
+    }
+    .banner1-texto{
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    .banner1__item{
+        margin:20px auto;
+    }
+    .banner1__item h2{
+        font-size: 50px;
+    }
+    .banner1 button{
+        align-self:center ;
+    }
+     /* banner 2 responsive tablet */
+     .banner2 ul{
+        justify-content: center;
+        gap:0 30px;
+    }
+    
+    .banner2 ul li{
+        padding: 20px 0;
+    }
+    .banner2 h1{
+        font-size: 30px;
+    }
+    /* banner 3 responsive tablet */
+    .banner3{
+        margin-top: 10px;
+    }
+    
+    .banner3 h2{
+        font-size: 40px;
+        padding:100px 30px;
+    }
+    /* Seccion preguntas responsive tablet */
+    .preguntas__header{
+        font-size: 25px;
+    }
+    .preguntas__ul-li{
+        margin-left: 0;
+        width: 90vw;
+    }
+    /* banner 4 responsive tablet */
+    .banner4{
+        display:flex;
+        flex-direction: column;
+    }
+    .banner4 h2{
+        font-size: 50px;
+        padding-top: 130px;
+        width: 550px;
+        align-self:center ;
+    }
+    
+    .banner4 button{
+        margin-left: 0;
+        margin-bottom: 25px;
+        align-self: center;
+    }
+    /* footer responsive tablet */
+    .footerDetalles{
+        flex-direction: column;
+    }
+    .footer__ul-li{
+        padding: 15px 0;
+    }
+
+    .footer-section{
+        padding: 10px 0;
+    }
+    
+    .subFooter__politica-ul{
+        gap:10px 13px;
+        flex-direction: column;
+    }
+    
+    .subFooter__region{
+        margin:0 30px;
+    }
+}
+/* Fin de configuracion responsive para tablets */
+/* Inicio de configuracion responsive para desktop pequeño */
+@media screen and (min-width:992px) and (max-width:1400px){
+    /* header responsiver desktop  */
+    .logo{
+        margin:15px 30px;
+    }
+    .banner1__item{
+        margin: 50px 70px;
+    }
+}
